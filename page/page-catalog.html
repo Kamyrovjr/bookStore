@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/fonts/font.css">
+    <title>Book4you</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main__header">
+            <div class="main__header__wrapper">
+                <a href="/index.html"><h1 class="main__header__wrapper__logo-text">Book❤️️you</h1></a>
+                <div class="main__header__wrapper__nav">
+                    <a class="main__header__wrapper__nav__item" href="/page/page-news.html">НОВИНКИ</a>
+                    <a class="main__header__wrapper__nav__item" href="/page/page-catalog.html">КАТАЛОГ</a>
+                    <a class="main__header__wrapper__nav__item" href="/page/page-top_books.html">ТОП КНИГ</a>
+                    <a class="main__header__wrapper__nav__item" href="">АВТОРЫ</a>
+                </div>
+                <div class="main__header__wrapper__search-container">
+                    <input type="text" name="" id="inputSearch" placeholder="Search" class="main__header__wrapper__search-container__input">
+                    <div class="main__header__wrapper__search__border">
+                        <img class="main__header__wrapper__search__border__img" src="/img/search.svg" alt="" width="20px" height="19px">
+                    </div>
+                </div>
+                <div class="main__header__wrapper__container-icon">
+                    <div class="main__header__wrapper__container-icon__img">
+                        <img src="/img/notification.svg" alt="" width="35px" height="37px">
+                    </div>
+                    <div class="main__header__wrapper__container-icon__img">
+                        <a href="/page/page-cart.html"><img src="/img/cart.svg" alt=""  width="35px" height="37px"></a>
+                    </div>
+                    <div class="main__header__wrapper__container-icon__img">
+                        <img src="/img/account.svg" alt=""  width="35px" height="37px">
+                    </div>
+                </div>
+                <div id="registrationModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2>Регистрация</h2>
+                      <form id="registrationForm">
+                        <div class="input-group">
+                          <input type="text" id="firstName" placeholder="Имя" required>
+                          <input type="text" id="lastName" placeholder="Фамилия" required>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" id="username" placeholder="Логин" required>
+                          <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                          <input type="password" id="password" placeholder="Пароль" required>
+                          <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+                        </div>
+                        <button type="submit">Зарегистрироваться</button>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="main__section">
+            <div class="main__section__block-sale">
+                <h2 class="main__section__block-sale__title">КАТАЛОГ</h2>
+            </div>
+            <div class="main__section__block-library">
+                <div class="main__section__block-library__wrapper">
+                    <div class="main__section__block-library__wrapper__filter-container">
+                        <h2>Фильтр</h2>
+                        <label for="publishing">Издательство:</label>
+                        <select id="publishing">
+                        
+                        </select>
+                      
+                        <label for="genre">Жанр:</label>
+                        <select id="genre">
+                        </select>
+                      
+                        <div class="main__section__block-library__wrapper__filter-container__item">
+                              <label for="price">Цена:</label>
+                            <div class="main__section__block-library__wrapper__filter-container__item__input">
+                              <input type="number" id="minPrice" placeholder="Мин">
+                              <span style="margin: 0 5px;">-</span>
+                              <input type="number" id="maxPrice" placeholder="Макс">
+                            </div>
+                          </div>
+                      
+                        <div class="main__section__block-library__wrapper__filter-container__item">
+                            <label for="language">Язык:</label>
+                            <select id="language">
+
+                            </select>
+                        </div>
+
+                        <div class="main__section__block-library__wrapper__filter-container__item">
+                            <label for="format">Формат:</label>
+                            <select id="format">
+                            </select>
+                          </div>
+                          <button class="main__section__block-library__wrapper__btn">Применить фильтры</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="main__section-email">
+        <div class="main__section-email__img">
+            <img src="/img/email.svg" alt="" width="32px" height="21px">
+        </div>
+        <h2 class="main__section-email__title">Для связи с магазином оставляйте свою почту</h2>
+        <div class="main__section-email__block">
+            <input type="text" class="main__section-email__block__input" placeholder="example@gmail.com">
+            <button class="main__section-email__block__button">Отправить</button>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer_block_content">
+                <div class="footer_block_title">
+                    <h2 class="footer_title">
+                        ПОЛЕЗНЫЕ ССЫЛКИ
+                    </h2>
+                </div>
+                <div class="footer_block_text_wrap">
+                    <p class="footer_block_links_text">Доставка</p>
+                    <p class="footer_block_links_text">Оплата </p>
+                    <p class="footer_block_links_text">Акции</p>
+                    <p class="footer_block_links_text">Политика конфиденциальности</p>
+                </div>
+            </div>
+            <div class="footer_block_content">
+                <div class="footer_block_title">
+                    <h2 class="footer_title">
+                        ОПЛАТА
+                    </h2>
+                </div>
+                <p class="footer_block_text">Оплата картой для всех стран СНГ</p>
+                <div class="footer_block_cards">
+                    <div class="footer_block_visa_img">
+                        <img src="/img/visa.svg" alt="" width="45px" height="30px">
+                    </div>
+                    <div class="footer_block_master_img">
+                        <img src="/img/mastercard.svg" alt="" width="45px" height="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block_content">
+                <div class="footer_block_title">
+                    <h2 class="footer_title">
+                        КОНТАКТЫ
+                    </h2>
+                </div>
+                <div class="footer_block_call">
+                    <img class="footer_call_img" src="/img/phone.svg" alt="" width="20px" height="20px">
+                    <span class="footer_call_number">8 (812) 234-56-55</span>
+                </div>
+                <div class="footer_block_call">
+                    <img class="footer_call_img" src="/img/phone.svg" alt="" width="20px" height="20px">
+                    <span class="footer_call_number">8 (812) 234-56-55</span>
+                </div>
+                <div class="footer_block_mail">
+                    <img class="footer_mail_img" src="/img/mail.svg" alt="" width="20px" height="20px">
+                    <a href="#" class="footer_mail_text">ojjo@ojjo.ru</a>
+                </div>
+            </div>
+            <div class="footer_block_content">
+                <div class="footer_block_title">
+                    <h2 class="footer_title">
+                        СОЦИАЛЬНЫЕ СЕТИ
+                    </h2>
+                </div>
+                <p class="footer_block_text text_social">
+                    Подписывайтесь на наши социальные сети, 
+                    заказывайте книги, а так же на ютуб канал
+                </p>
+                <div class="footer_block_social_img">
+                    <img class="footer_social_img" src="/img/youtube.svg" alt="" width="26px" height="26px">
+                    <img class="footer_social_img" src="/img/vk.svg" alt="" width="24px" height="24px">
+                    <img class="footer_social_img" src="/img/facebook.svg" alt="" width="26px" height="26px">
+                    <img class="footer_social_img" src="/img/telegram.svg" alt="" width="24px" height="24px">
+                    <img class="footer_social_img" src="/img/etsy.svg" alt="" width="16px" height="16px">
+                </div>
+            </div>
+        </div>
+        <div class="footer_block_bottom">
+            <div class="footer_block_bottom_text">
+                <p class="bottom_text">
+                    (c) 2020 OJJO jewelry
+                </p>
+            </div>
+            <div class="footer_block_bottom_text">
+                <p class="bottom_text">
+                    Договор публичной офферты
+                </p>
+            </div>
+            <div class="footer_block_bottom_text">
+                <p class="bottom_text">
+                    Контрагентам
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="module" src="/index.js"></script>
+<script src="/page/registrationModal.js"></script>
+</body>
+</html>
